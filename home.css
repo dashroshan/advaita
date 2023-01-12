@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+#herosection {
+    background: url(./assets/home/herobg.png);
+    background-size: cover;
+    width: 100vw;
+    display: block;
+    height: 115vh;
+}
+
+#navbar {
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    position: absolute;
+}
+
+#navbar img {
+    transform: translateY(0.4rem);
+}
+
+#navitems {
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    align-items: center;
+}
+
+#navitems div {
+    cursor: pointer;
+}
+
+#navbtn {
+    background: #A0000087;
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+    transform: translateY(-0.2rem);
+    transition: 0.5s;
+}
+
+#navbtn:hover {
+    background: #FF52527A;
+}
+
+.navitem:after {
+    content: " ";
+    background: #FF52527A;
+    height: 0.2rem;
+    border-radius: 0.1rem;
+    margin-top: 0.3rem;
+    width: 0%;
+    left: 50%;
+    display: block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.navitem:hover::after {
+    width: 100%;
+    left: 0%;
+}
+
+@media (max-width: 785px) {
+    #navitems {
+        display: none;
+    }
+}
+
+#herologo {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+#herologotext {
+    color: white;
+    font-family: 'Stick No Bills';
+    font-size: 2.4rem;
+    transform: translateX(1vw);
+    background-image: linear-gradient(45deg, #FF0000, #FF9C9C, #FF0000);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#herologo img {
+    width: 70vw;
+}
+
+#herocards {
+    display: flex;
+    justify-content: center;
+    margin: -9rem;
+    gap: 3vw;
+}
+
+.herocard {
+    overflow: hidden;
+    border-radius: 1rem 0 1rem 0;
+    height: 14rem;
+}
+
+.herocard img {
+    height: 14rem;
+}
+
+.herocardbg {
+    background: #d40909b3;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    transform: translateY(-100%);
+}
+
+#about {
+    background: linear-gradient(90deg, rgba(134, 0, 0, 1) 0%, rgba(26, 5, 5, 1) 100%);
+    width: 100vw;
+    height: 40rem;
+    display: block;
+}
