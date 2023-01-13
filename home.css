@@ -168,7 +168,7 @@
 /* Hero section start */
 
 #herosection {
-    background: url(./assets/home/herobg.png);
+    background: url(./assets/home/herobg.webp);
     background-size: cover;
     width: 100vw;
     display: block;
@@ -222,6 +222,7 @@
     text-align: center;
     color: white;
     transform: translateY(-100%);
+    border-radius: 1rem 0 0 0;
 }
 
 @media (max-width: 860px) {
@@ -317,6 +318,54 @@
 }
 
 /* About section end */
+
+
+/* Features section start */
+
+#features {
+    background: linear-gradient(90deg, #540101 0%, #130303 100%);
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+    color: white;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    font-family: 'Stick No Bills';
+    font-size: 2rem;
+    color: #FF5252C4;
+    line-height: 1.8rem;
+}
+
+#features>div {
+    display: flex;
+    height: 9rem;
+}
+
+#features>div:nth-of-type(2n+1) {
+    align-items: flex-end;
+}
+
+@media (max-width: 720px) {
+    #features {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 60px;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    #features>div {
+        height: unset;
+    }
+
+    #features>div:nth-of-type(2n+1) {
+        align-items: unset;
+    }
+}
+
+
+/* Features section end */
 
 
 /* Contacts section start */
