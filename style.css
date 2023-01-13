@@ -3,7 +3,7 @@
     margin: 0;
 }
 .event_Laptop{
-    height:300vh;
+    height:260vh;
     width:100vw;
     background-image:linear-gradient(90deg,#870000 48% ,#1A0505);
     
@@ -104,7 +104,7 @@ img:hover + .card_description{
 }
 .slide{
     position: absolute;
-    top:370vh;
+    top:400vh;
     opacity: 0;
     transition: 200ms opacity ease-in-out;
 }
@@ -159,7 +159,7 @@ margin-top: 5vh;
  background:none;
  border:none;
  font-size:4rem;
-top:390vh;
+top:420vh;
 left:20vw;
 color: #FFFFFF;
 cursor:pointer;
@@ -170,7 +170,7 @@ cursor:pointer;
     background:none;
     border:none;
     font-size:4rem;
-   top:390vh;
+   top:420vh;
    right:20vw;
    color: #FFFFFF;
    cursor:pointer;
