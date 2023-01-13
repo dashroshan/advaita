@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.event_mobile{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(90deg,#870000 48% ,#1A0505);
+    display: none;
+}
+.head{
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 98px;
+    
+    /* white */
+    
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.description_mob{
+   width:80%;
+   margin: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 30;
+    font-size: 18px;
+    text-align:center;
+    /* white */
+    
+    color: #FFFFFF;
+}
+@media only screen and (max-width:450px) and (max-height:900px) {
+    .event_mobile{
+        display: block;
+    }
+}
