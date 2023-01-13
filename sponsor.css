@@ -1,0 +1,57 @@
+body {
+    margin-top: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 0;
+    background: #870000;
+    background: linear-gradient(90deg, #870000 0%, rgba(26, 5, 5, 1) 100%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 8%;
+}
+.sponsors, .contact {
+    padding-right: 30%;
+    margin-bottom: 20%;
+}
+p{
+    font-size: 0.7rem;
+    line-height: auto;
+}
+.sponsor{
+    margin-top: 8rem;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+.left-box{
+    width:300px;
+    float: left;
+    margin-left: 10%;
+    box-sizing: border-box;
+}
+.contacts ,h4{
+    letter-spacing: 0.15rem;
+    line-height: 1.2rem;
+}
+h2{
+    font-size: 2rem;
+}
+.right-box{
+    display: block;
+    float: right;
+    margin-right: 10%;
+    align-items: center;
+    text-align: center;
+}
+h4{
+    color: #ff5b5b;
+    opacity: 48%;
+}
+.threelogos{
+    align-items: center;
+    line-height: 4.6;
+    padding-bottom: 1rem;
+}
+.logo{
+    width: 2rem;
+    padding-right: 15%;
+}
