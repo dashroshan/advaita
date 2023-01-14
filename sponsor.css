@@ -1,8 +1,10 @@
 body{
+    margin: 0;
+    padding: 0;
     background: #870000;
-        background: linear-gradient(90deg, #870000 0%, rgba(26, 5, 5, 1) 100%);
-        color: white;
-        font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #870000 0%, rgba(26, 5, 5, 1) 100%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 .sponsors, .contact {
     padding-right: 30%;
