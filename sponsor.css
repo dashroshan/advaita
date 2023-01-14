@@ -1,13 +1,8 @@
-body {
-    margin-top: 0;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 0;
+body{
     background: #870000;
-    background: linear-gradient(90deg, #870000 0%, rgba(26, 5, 5, 1) 100%);
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 8%;
+        background: linear-gradient(90deg, #870000 0%, rgba(26, 5, 5, 1) 100%);
+        color: white;
+        font-family: 'Poppins', sans-serif;
 }
 .sponsors, .contact {
     padding-right: 30%;
@@ -17,13 +12,13 @@ p{
     font-size: 0.7rem;
     line-height: auto;
 }
-.sponsor{
-    margin-top: 8rem;
-    align-items: center;
-    margin-bottom: 15rem;
+#sponsor{
+    display: flex;
+    margin: 10rem 20%;
+    letter-spacing: 8%;
 }
 .left-box{
-    width:300px;
+    width:320px;
     float: left;
     margin-left: 10%;
     box-sizing: border-box;
@@ -36,9 +31,9 @@ h2{
     font-size: 2rem;
 }
 .right-box{
-    display: block;
+    display:block;
     float: right;
-    margin-right: 10%;
+    margin:auto 10%;
     align-items: center;
     text-align: center;
 }
@@ -53,5 +48,5 @@ h4{
 }
 .logo{
     width: 2rem;
-    padding-right: 15%;
+    padding: 8%;
 }
