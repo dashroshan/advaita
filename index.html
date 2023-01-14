@@ -30,9 +30,14 @@
 
     <script src="./index.js" defer></script>
     <link rel="stylesheet" href="./index.css">
+
+    <script src="./home.js" defer></script>
     <link rel="stylesheet" href="./home.css">
 
     <script src="https://kit.fontawesome.com/20aa92e9f6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,15 +47,18 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Stick+No+Bills:wght@800&display=swap');
     </style>
-     
 
 </head>
 
 <body>
 
-    <!-- Menu bar -->
+    <div id="loader_block">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <nav id="navbar-wrap">
-        <!-- Desktop Menu -->
         <div id="navbar">
             <div data-aos="fade-down" id="logo" class="reverse">
                 <div class="mobile-btn" style="font-size:30px;cursor:pointer; font-weight:bold;" onclick="openNav()">
@@ -68,8 +76,6 @@
             </div>
         </div>
 
-
-        <!-- Mobile Menu -->
         <div id="mySidenav" class="sidenav">
             <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="./event.html">Events</a>
@@ -86,17 +92,27 @@
             <div id="herologotext">16 FEBRUARY - 19 FEBRUARY 2022</div>
         </div>
         <div id="herocards">
-            <div class="herocard">
-                <img src="./assets/home/herocard3.webp">
-                <div class="herocardbg">Lorem Ipsum</div>
-            </div>
-            <div class="herocard">
-                <img src="./assets/home/herocard1.webp">
-                <div class="herocardbg">Lorem Ipsum</div>
-            </div>
-            <div class="herocard">
-                <img src="./assets/home/herocard2.webp">
-                <div class="herocardbg">Lorem Ipsum</div>
+            <div class="swiper mySwiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="herocard">
+                            <img src="./assets/home/herocard3.webp">
+                            <div class="herocardbg">Lorem Ipsum</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="herocard">
+                            <img src="./assets/home/herocard2.webp">
+                            <div class="herocardbg">Lorem Ipsum</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="herocard">
+                            <img src="./assets/home/herocard1.webp">
+                            <div class="herocardbg">Lorem Ipsum</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -129,8 +145,10 @@
         </div>
     </section>
 
-    <section id="footer" style="height: 40rem;">
-
+    <section id="ytvideo">
+        <iframe
+            src="https://www.youtube.com/embed/BRAvwTguv3I?autoplay=1&mute=1&modestbranding=1&showinfo=0&loop=1&playlist=BRAvwTguv3I"
+            title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
     </section>
 
     <section id="contacts">
@@ -178,9 +196,6 @@
             <a href="" class="social-icon"><img src="./assets/home/social-twitter.svg"></a>
         </div>
     </section>
-
-
-
 
 </body>
 

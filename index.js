@@ -31,3 +31,15 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 // Nav bar end
+
+// Page loader start
+const pageLoaded = () => {
+    // Remove loader
+    const loader = document.getElementById('loader_block');
+    loader.style.opacity = '0';
+    setTimeout(() => loader.style.display = 'none', 300);
+
+    window.removeEventListener('load', pageLoaded);
+}
+window.addEventListener('load', pageLoaded);
+// Page loader end
