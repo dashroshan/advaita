@@ -13,7 +13,7 @@ p{
     line-height: auto;
 }
 #sponsor{
-    display: flex;
+    display:flow-root ;
     margin: 10rem 20%;
     letter-spacing: 8%;
 }
