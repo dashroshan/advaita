@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    background: linear-gradient(90deg, rgba(134, 0, 0, 1) 0%, rgba(26, 5, 5, 1) 100%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+.pronites {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+}
+
+.events {
+    padding: 5rem 0;
+    font-size: 1rem;
+    gap: 40px;
+}
+
+.eventscontent {
+    width: 400px;
+    opacity: 0.7;
+    text-align: justify;
+    font-size: 0.9rem;
+    padding: 0 5rem;
+}
+
+.pronitescontent {
+    width: 400px;
+    padding: 0 5rem;
+}
+
+.pronitescontent>div:nth-of-type(1) {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.pronitescontent>div:nth-of-type(2) {
+    opacity: 0.7;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+.pronites img {
+    width: 450px;
+}
+
+@media (max-width: 945px) {
+    .pronites {
+        flex-direction: column-reverse;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        width: unset;
+    }
+
+    .pronitescontent {
+        width: 90vw;
+    }
+
+    .pronites img {
+        width: 90vw;
+    }
+
+    .pronitescontent>div:nth-of-type(1) {
+        text-align: center;
+    }
+}
