@@ -34,7 +34,7 @@
 #links {
     display: flex;
     justify-content: right;
-    gap: 1.5em;
+    gap: 5vw;
     align-items: center;
     transform: translateY(-0.5rem);
 }
@@ -69,6 +69,7 @@
     border-radius: 2rem;
     transform: translateY(-0.2rem);
     transition: 0.5s;
+    margin-right: 1vw;
 }
 
 #navbtn:hover {
@@ -126,7 +127,7 @@
     transform: scale(0.9) translateY(-1.1rem);
 }
 
-@media (max-width: 860px) {
+@media (max-width: 897px) {
 
     #links,
     .mobile-menu {
@@ -170,7 +171,6 @@
 #herosection {
     background: url(./assets/home/herobg.webp);
     background-size: cover;
-    width: 100vw;
     display: block;
     height: 115vh;
 }
@@ -202,7 +202,7 @@
 #herocards {
     display: flex;
     justify-content: center;
-    margin: 0rem;
+    margin: -8rem;
     gap: 3vw;
 }
 
@@ -225,7 +225,30 @@
     border-radius: 1rem 0 0 0;
 }
 
-@media (max-width: 860px) {
+
+.swiper {
+    height: 30rem;
+    width: 57rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+@media (max-width: 945px) {
     #herologo img {
         display: none;
     }
@@ -238,6 +261,7 @@
     #herologotext {
         text-align: center;
         margin: 0 1rem;
+        margin-top: 5rem;
     }
 
     #herocards {
@@ -247,14 +271,25 @@
         margin-bottom: 20px;
     }
 
+    .swiper {
+        width: 38rem;
+    }
+
     #herosection {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 60rem;
+        height: max(100vh, 40rem);
         padding-top: 40px;
         width: unset;
+    }
+}
+
+
+@media (max-width: 630px) {
+    .swiper {
+        width: 20rem;
     }
 }
 
@@ -366,6 +401,37 @@
 
 
 /* Features section end */
+
+
+
+/* YTVideo section start  */
+
+#ytvideo {
+    background: linear-gradient(90deg, rgba(134, 0, 0, 1) 0%, rgba(26, 5, 5, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 7rem 0;
+}
+
+#ytvideo iframe {
+    width: 70vw;
+    aspect-ratio: 2;
+}
+
+@media (max-width: 945px) {
+    #ytvideo {
+        padding: 5vw 0;
+    }
+
+    #ytvideo iframe {
+        width: 90vw;
+    }
+}
+
+/* YTVideo section end */
 
 
 /* Contacts section start */
@@ -481,3 +547,5 @@
 .social-icon:last-of-type {
     margin-right: 0;
 }
+
+/* Footer end */
