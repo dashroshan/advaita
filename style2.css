@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(90deg, #870000 0%, rgba(26, 5, 5, 1) 100%);
+      overflow-x:hidden ;
+
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80vh;
+}
+.event_description{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    width:30rem;
+    height:20rem;
+}
+.desc{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+font-weight: 400;
+font-size: 1.1rem;
+line-height: 1.8rem;
+
+/* white */
+
+color: #FFFFFF;
+
+opacity: 0.7;
+}
+.heading{
+    font-family: 'Poppins', sans-serif;
+        font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 6rem;
+    
+    /* white */
+    
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.heading2{
+    font-family: 'Poppins', sans-serif;
+        font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3rem;
+    
+    /* white */
+    padding:0 0 3rem 0;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.event_image{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding:6rem 0 0 6rem;
+}
+.schedule{
+    width:70vw;
+    height:70vh;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    margin: auto;
+}
+.schedule_desc1{
+    position: absolute;
+    width:20vw;
+    background: #A00000;
+    opacity: 0.7;
+    border-radius: 20px 0px;
+    height: 10vh;
+    top:50vh;
+}
+.align_right{
+    /* translate: 100%; */
+}
+.width-100{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100vw;
+}
+.vertical_ruler{
+    position:absolute;
+    left:50vw;
+    top:170vh;
+    width:1vh;
+    height:360vh;
+    background-color:#FFFFFF;
+
+}
+.date-card{
+    position: relative;
+    z-index:2;
+    background-color: #FFFFFF;
+    width:18vw;
+    padding:10px;
+    display:flex;
+    align-items:center;
+  }
+  
+  .date-card .day{
+    font-size:4.5rem;
+    margin:0px 10px;
+    color:#A00000;
+  }
+  
+  .date-card .month{
+    font-weight:bold;
+    font-size:2.7rem;
+    color:#A00000;
+  }
+  .date-container{
+    display:flex;
+    align-items:center;
+    height:45vh;
+    width:50vw;
+  }
+  .date-left{
+    justify-content:flex-end;
+  }
+
+  .arrow-left{
+    position:relative;
+    z-index: 1;
+    left:3%;
+    height:5vh;
+    width:5vh;
+    background-color:#FFFFFF;
+    transform: rotate(45deg);
+  }
+  .arrow-right{
+    position:relative;
+    z-index: 1;
+    right:3%;
+    height:5vh;
+    width:5vh;
+    background-color:#FFFFFF;
+    transform: rotate(45deg);
+  }
+  li{
+    line-height:2rem;
+    text-align:left;
+  }
