@@ -27,7 +27,7 @@ line-height: 114.5%;
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+  /* transform: rotateY(180deg); */
 }
 
 /* Position the front and back side */
@@ -86,11 +86,22 @@ ul{
 }
 @media (max-width:550px) {
   .flip-card{
-    object-fit:cover;
-    width:40vw;
+    width:100vw;
   }
   .flip-card-back{
     font-size:0.8rem;
   }
- 
+ .flip-card-back, .flip-card-front{
+  width: 85vw;;
+ }
 }
+@media (max-width:400px) {
+    .flip-card{
+      width:100vw;
+    }
+    .flip-card-back, .flip-card-front{
+      width:80vw;
+    }
+    
+    
+} 

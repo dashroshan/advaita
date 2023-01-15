@@ -107,6 +107,8 @@ opacity: 0.7;
     padding:10px;
     display:flex;
     align-items:center;
+    border: 1px solid black; 
+    display: none;
   }
   
   .date-card .day{
@@ -138,6 +140,7 @@ opacity: 0.7;
     width:5vh;
     background-color:#FFFFFF;
     transform: rotate(45deg);
+    display:none;
   }
   .arrow-right{
     position:relative;
@@ -147,6 +150,7 @@ opacity: 0.7;
     width:5vh;
     background-color:#FFFFFF;
     transform: rotate(45deg);
+    display:none;
   }
   li{
     line-height:2rem;
@@ -177,17 +181,17 @@ opacity: 0.7;
    #img2{
     object-fit: cover;
     margin:1rem;
-    width:30vw;
+    width:40vw;
    }
    #img3{
     object-fit: cover;
     margin:1rem;
-    width:30vw;
+    width:40vw;
    }
    #img4{
     object-fit: cover;
     margin:1rem;
-    width:30vw;
+    width:40vw;
    }
    .vertical_ruler{
     top:300vh;
@@ -263,7 +267,8 @@ opacity: 0.7;
   }
   @media (max-width:550px) {
         .vertical_ruler{
-            width:0.5vh
+            width:0.5vh;
+            display:none;
         }
       .heading2{
         font-size:1.8rem;
@@ -271,11 +276,11 @@ opacity: 0.7;
       .desc{
         font-size:0.8rem;
       }
+      
   }
   @media (max-width:480px){
     .container{
         flex-direction: column;
-        border: 2px solid black;
     }
     .desc{
         font-size:1rem;
@@ -315,4 +320,38 @@ opacity: 0.7;
        .heading2{
         font-size:1.5rem;
        }
+  }
+  @media (max-width:400px){
+    .heading{
+        width:80vw;
+        margin-top:12rem ;
+        overflow:hidden;
+    }
+    .event_description{
+        height:100vh;
+        justify-content:space-around;
+    }
+    #img1{
+        width:80vw;
+    }
+    .schedule{
+        height:120vh;
+    }
+
+    .vertical_ruler, .date-card, .arrow-left, .arrow-right{
+       display:none;
+    }
+    .width-100{
+        justify-content:space-between;
+    }
+    #
+    
+  }
+  @media (min-width: 350) {
+    .desc2{
+        width:50vw;
+    }
+    .container{
+        justify-content:space-around;
+    }
   }
