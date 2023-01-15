@@ -93,9 +93,9 @@ opacity: 0.7;
 .vertical_ruler{
     position:absolute;
     left:50vw;
-    top:170vh;
+    top:177vh;
     width:1vh;
-    height:360vh;
+    height:410vh;
     background-color:#FFFFFF;
 
 }
@@ -110,14 +110,14 @@ opacity: 0.7;
   }
   
   .date-card .day{
-    font-size:4.5rem;
+    font-size:2rem;
     margin:0px 10px;
     color:#A00000;
   }
   
   .date-card .month{
     font-weight:bold;
-    font-size:2.7rem;
+    font-size:1rem;
     color:#A00000;
   }
   .date-container{
@@ -151,4 +151,124 @@ opacity: 0.7;
   li{
     line-height:2rem;
     text-align:left;
+  }
+  @media (max-width:945px) {
+    .heading{
+      font-size: 3rem;
+      line-height:4rem;
+      margin: 0 2rem 0 2rem;
+    }
+    .desc{
+        font-size:1rem;
+        line-height:1.1rem;
+        margin: 0 2rem 0 2rem;
+    }
+    #img1{
+        object-fit: cover;
+        width:45vw;
+        margin:0 0 5rem 0;
+    }
+   .schedule{
+    height:200vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   #img2{
+    object-fit: cover;
+    margin:1rem;
+    width:30vw;
+   }
+   #img3{
+    object-fit: cover;
+    margin:1rem;
+    width:30vw;
+   }
+   #img4{
+    object-fit: cover;
+    margin:1rem;
+    width:30vw;
+   }
+   .vertical_ruler{
+    top:300vh;
+    height:415vh;
+   }
+   .arrow-left{
+    left:6%;
+   }
+   .arrow-right{
+    right:6%;
+   }
+  }
+  @media (max-width:720px) {
+        .heading2{
+            font-size:2rem;
+        }
+        .heading{
+            font-size:2rem;
+            line-height: 2rem;
+            margin: 1rem;
+        }
+        #img1{
+            margin-right: 1rem;
+        }
+        .schedule{
+            height:130vh;
+        }
+        .desc{
+            font-size:1rem;
+            width:100%;
+        }
+        .vertical_ruler{
+            top:230vh;
+            height:415vh;
+        }
+        .desc2{
+            margin-left:4rem;
+        }
+        
+        .date-card .day{
+            font-size:2rem;
+
+        }
+        .date-card .month{
+            font-size:0.8rem;
+        }
+        .arrow-left{
+            left:7%;
+           }
+           .arrow-right{
+            right:7%;
+           }
+       
+  }
+  @media (max-width:600px){
+    .desc{
+        font-size:0.8rem;
+    }
+    .date-card .day{
+        font-size:1.8rem;
+
+    }
+    .date-card .month{
+        font-size:0.6rem;
+    }
+    .arrow-left{
+        left:10%;
+       }
+       .arrow-right{
+        right:10%;
+       }
+
+  }
+  @media (max-width:550px) {
+        .vertical_ruler{
+            width:0.5vh
+        }
+      .heading2{
+        font-size:1.8rem;
+      }
+      .desc{
+        font-size:0.8rem;
+      }
   }
