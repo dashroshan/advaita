@@ -272,3 +272,45 @@ opacity: 0.7;
         font-size:0.8rem;
       }
   }
+  @media (max-width:480px){
+    .container{
+        flex-direction: column;
+        border: 2px solid black;
+    }
+    .desc{
+        font-size:1rem;
+        width: 90%;
+    }
+    .event_image{
+        padding: 0;
+    }
+    .schedule{
+        height:90vh ;
+    }
+    #img4 , #img2 , #img3{
+        object-fit:cover;
+        width: 60%;
+    }
+    .vertical_ruler{
+        top:186vh;
+        height:403vh;
+    }
+    .date-card .day{
+        font-size:1.3rem;
+
+    }
+    .date-card .month{
+        font-size:0.6rem;
+    }
+    .arrow-left{
+        left:10%;
+        height:3vh;
+        width:3vh;
+       }
+       .arrow-right{
+        right:10%;
+        height:3vh;
+        width:3vh;
+       }
+       
+  }
