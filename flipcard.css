@@ -66,10 +66,10 @@ line-height: 114.5%;
   border-radius: 30px 0px;
   overflow-y: scroll;
 }
-.flip-card-back::-webkit-scrollbar{
+.flip-card::-webkit-scrollbar{
   display: none;
 }
-.flip-card-back {
+.flip-card {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }

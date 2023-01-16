@@ -18,10 +18,15 @@ overflow-y:scroll;
 }
 .event_description{
     margin-top:5rem;
-    height:100vh;
+    height:;
     display:flex;
     flex-direction:column;
     justify-content:baseline;
+}
+@media (max-width:470px) {
+    #img1{
+        width:70vh;
+    }
 }
 @media (max-width:400px) {
     .cont{
@@ -37,6 +42,18 @@ height: 100vh;
   .desc2{
     width:60%;
 }
+
+}
+
+@media (max-width:1000px) {
+    #img1{
+        width:50vh;
+    }
+}
+@media (max-width:1250px) {
+    #img1{
+        width:70vh;
+    }
 }
 @media (max-width:900px) {
     .align_right{
@@ -52,7 +69,7 @@ height: 100vh;
         width:80vw;
     }
     #img1{
-        width:80vw;
+        width:50vw;
     }
     
 }
