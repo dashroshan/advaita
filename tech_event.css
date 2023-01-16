@@ -1,0 +1,58 @@
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+.desc{
+    text-align: center;
+    width:80%;
+    margin:auto;
+}
+.flip-card{
+width:50vw;  
+overflow-y:scroll;
+}
+.flip-card-front, .flip-card-back{
+    width: 100%;
+}
+.align_right{
+    translate: 45vw;
+}
+.event_description{
+    margin-top:5rem;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:baseline;
+}
+@media (max-width:400px) {
+    .cont{
+height: 100vh;
+  }
+  .eve{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:200vh;
+    padding-bottom: 4rem;
+  }
+  .desc2{
+    width:60%;
+}
+}
+@media (max-width:900px) {
+    .align_right{
+        translate:0;
+    }
+    .container2{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-direction:column;
+    }
+    .flip-card{
+        width:80vw;
+    }
+    #img1{
+        width:80vw;
+    }
+    
+}
