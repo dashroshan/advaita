@@ -1,16 +1,14 @@
-body{
+body {
     margin: 0;
     background: linear-gradient(90deg, rgba(134, 0, 0, 1) 0%, rgba(26, 5, 5, 1) 100%);
     color: white;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
 }
+
 .pronites {
-    width: 100vw;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
     padding-top: 20rem;
     padding-bottom: 5rem;
 }
@@ -18,7 +16,11 @@ body{
 .events {
     padding: 5rem 0;
     font-size: 1rem;
-    gap: 40px;
+}
+
+.pronites,
+.pronites.events {
+    gap: 6vw;
 }
 
 .eventscontent {
@@ -26,12 +28,11 @@ body{
     opacity: 0.7;
     text-align: justify;
     font-size: 0.9rem;
-    padding: 0 5rem;
+    padding: 0;
 }
 
 .pronitescontent {
     width: 400px;
-    padding: 0 5rem;
 }
 
 .pronitescontent>div:nth-of-type(1) {
@@ -50,23 +51,37 @@ body{
     width: 450px;
 }
 
-@media (max-width: 945px) {
+@media (max-width: 975px) {
     .pronites {
         flex-direction: column-reverse;
-        padding-top: 4rem;
+        padding-top: 6rem;
         padding-bottom: 4rem;
         width: unset;
-    }
-
-    .pronitescontent {
-        width: 90vw;
+        margin-top: 4rem;
+        gap: 15px;
     }
 
     .pronites img {
         width: 90vw;
+        max-width: 500px;
     }
 
     .pronitescontent>div:nth-of-type(1) {
         text-align: center;
+    }
+
+    .events:nth-of-type(2n) {
+        flex-direction: column;
+    }
+
+    .pronitescontent,
+    .eventscontent {
+        width: 90vw;
+        max-width: 500px;
+    }
+
+    .pronites.events {
+        padding: 0;
+        gap: 0;
     }
 }
