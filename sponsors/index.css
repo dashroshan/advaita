@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg, #870000 0%, rgba(26, 5, 5, 1) 100%);
+    background: linear-gradient(90deg, #273D58 0%, #1A0505 100%);
     color: white;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -51,8 +51,8 @@ h2 {
 }
 
 h4 {
-    color: #ff5b5b;
-    opacity: 48%;
+    color: #ff6868;
+    opacity: 100%;
     margin: 1rem 0;
 }
 

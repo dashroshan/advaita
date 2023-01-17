@@ -1,14 +1,15 @@
 body {
-    background: linear-gradient(90deg, #870000 0%, rgba(26, 5, 5, 1) 100%);
     color: white;
+    background: linear-gradient(10deg, #1A283A 0%, #210303 100%);
 }
 
 #events {
-    margin-top: 16rem;
+    background: linear-gradient(150deg, #1A283A 0%, #210303 100%);
+    padding-top: 16rem;
     display: flex;
     justify-content: center;
     gap: 4vw;
-    margin-bottom: 10rem;
+    padding-bottom: 12rem;
 }
 
 #events img {
@@ -35,16 +36,21 @@ body {
 .redtext {
     font-weight: bold;
     font-size: 2rem;
-    color: #FF5B5B7A;
+    color: #ff6868;
     text-align: center;
     margin-bottom: 4rem;
+}
+
+#schedule {
+    background: linear-gradient(90deg, #273D58 0%, #1A0505 100%);
+    padding-top: 5rem;
 }
 
 #schCards {
     display: flex;
     justify-content: center;
     gap: 1.5vw;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .scheduleCard img {
@@ -52,7 +58,7 @@ body {
 }
 
 .scheduleCard>div {
-    background: #a00000cf;
+    background: #5dafd2c9;
     padding: 2.5rem;
     text-align: center;
     font-size: 1.4rem;
@@ -65,7 +71,8 @@ body {
 }
 
 #eventsList {
-    margin-bottom: 2rem;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
 }
 
 .eventCards {
@@ -138,8 +145,8 @@ body {
     #events {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 12rem;
-        margin-bottom: 8rem;
+        padding-top: 12rem;
+        padding-bottom: 8rem;
     }
 
     #events img {
