@@ -47,33 +47,35 @@
 
 <body>
 
-    <!-- Menu bar -->
+    <div id="loader_block">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <nav id="navbar-wrap">
-        <!-- Desktop Menu -->
         <div id="navbar">
             <div data-aos="fade-down" id="logo" class="reverse">
                 <div class="mobile-btn" style="font-size:30px;cursor:pointer; font-weight:bold;" onclick="openNav()">
                     <i class="fa-solid fa-bars fa-lg"></i>
                 </div>
-                <div class="logo"><img src="../assets/home/navlogo.webp">
+                <div class="logo"><a href="/"><img src="/assets/home/navlogo.webp"></a>
                 </div>
             </div>
             <div id="links" data-aos="fade-down">
-                <a class="navitem" href="./event.html">Events</a>
-                <a class="navitem" href="./pronites.html">Pro Nites</a>
-                <a class="navitem" href="./sponsor.html">Sponsors</a>
+                <a class="navitem" href="/events">Events</a>
+                <a class="navitem" href="/pronites">Pro Nites</a>
+                <a class="navitem" href="/sponsors">Sponsors</a>
                 <a class="navitem" href="#">Contact Us</a>
                 <a id="navbtn" href="#">Register</a>
             </div>
         </div>
 
-
-        <!-- Mobile Menu -->
         <div id="mySidenav" class="sidenav">
             <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="./event.html">Events</a>
-            <a href="./pronites.html">Pro Nites</a>
-            <a href="./sponsor.html">Sponsors</a>
+            <a href="/events">Events</a>
+            <a href="/pronites">Pro Nites</a>
+            <a href="/sponsors">Sponsors</a>
             <a href="#">Contact Us</a>
             <a href="#">Register</a>
         </div>
