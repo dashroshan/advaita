@@ -9,8 +9,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20rem;
-    padding-bottom: 5rem;
+    padding-top: 18rem;
+    padding-bottom: 15rem;
+}
+
+.pronites:nth-of-type(2n+1) {
+    background: linear-gradient(150deg, #1A283A 0%, #210303 100%);
 }
 
 .events {
@@ -54,10 +58,9 @@ body {
 @media (max-width: 975px) {
     .pronites {
         flex-direction: column-reverse;
-        padding-top: 6rem;
-        padding-bottom: 4rem;
+        padding-top: 10rem;
+        padding-bottom: 7rem;
         width: unset;
-        margin-top: 4rem;
         gap: 15px;
     }
 
@@ -81,7 +84,7 @@ body {
     }
 
     .pronites.events {
-        padding: 0;
+        padding: 5rem 0;
         gap: 0;
     }
 }
