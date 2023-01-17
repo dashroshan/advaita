@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:type" content="website" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Advaita</title>
+    <meta itemprop="name" content="Advaita" />
+    <meta property="og:title" content="Advaita" />
+    <meta name="twitter:title" content="Advaita">
+
+    <meta itemprop="image" content="https://url-to-thumbnail" />
+    <meta name="twitter:image" content="https://url-to-thumbnail" />
+    <meta name="twitter:image:src" content="https://url-to-thumbnail">
+    <meta property="og:image" content="https://url-to-thumbnail">
+
+    <link rel="icon" href="https://url-to-icon" />
+    <link rel="apple-touch-icon" href="https://url-to-icon" />
+    <link rel="shortcut icon" href="https://url-to-icon" type="image/x-icon">
+
+    <meta itemprop="description" content="Advaita site description goes here...!" />
+    <meta property="og:description" content="Advaita site description goes here...!" />
+    <meta name="twitter:description" content="Advaita site description goes here...!" />
+    <meta name="description" content="Advaita site description goes here...!">
+
+    <script src="../index.js" defer></script>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <script src="https://kit.fontawesome.com/20aa92e9f6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Stick+No+Bills:wght@800&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Stick+No+Bills:wght@800&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <div id="loader_block">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav id="navbar-wrap">
+        <div id="navbar">
+            <div data-aos="fade-down" id="logo" class="reverse">
+                <div class="mobile-btn" style="font-size:30px;cursor:pointer; font-weight:bold;" onclick="openNav()">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+                <div class="logo"><img src="../assets/home/navlogo.webp">
+                </div>
+            </div>
+            <div id="links" data-aos="fade-down">
+                <a class="navitem" href="#">Events</a>
+                <a class="navitem" href="#">Pro Nites</a>
+                <a class="navitem" href="#">Sponsors</a>
+                <a class="navitem" href="#">Contact Us</a>
+                <a id="navbtn" href="#">Register</a>
+            </div>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Events</a>
+            <a href="#">Pro Nites</a>
+            <a href="#">Sponsors</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Register</a>
+        </div>
+    </nav>
+
+    <section id="events">
+        <div id="eventsdesc">
+            <div>EVENTS AND SCHEDULE</div>
+            <div>Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra malesuada etiam.
+                Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at dolor ac id. Amet
+                sapien viverra tristique blandit quis molestie odio quis egestas. Viverra ultrices cursus ac sodales
+                convallis et sollicitudin. Sit justo venenatis odio tempus sed id cursus.</div>
+        </div>
+        <img src="../assets/events/hero.webp">
+    </section>
+
+    <section id="schedule">
+        <div class="redtext">SCHEDULE</div>
+        <div id="schCards">
+            <div class="scheduleCard small">
+                <img src="../assets/events/schedule1.png">
+                <div>DAY 1</div>
+            </div>
+            <div class="scheduleCard">
+                <img src="../assets/events/schedule2.png">
+                <div>DAY 2</div>
+            </div>
+            <div class="scheduleCard small">
+                <img src="../assets/events/schedule3.png">
+                <div>DAY 3</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="eventsList">
+        <div class="redtext">EVENTS</div>
+        <div class="eventCards">
+            <div class="eventCardWrap">
+                <div class="eventCard">
+                    <div>TECHNICAL<br>EVENTS</div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra malesuada
+                        etiam. Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at
+                        dolor ac
+                        id.
+                    </div>
+                </div>
+                <div class="eventCardBg"></div>
+            </div>
+            <div class="eventCardWrap">
+                <div class="eventCard">
+                    <div>CULTURAL<br>EVENTS</div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra malesuada
+                        etiam. Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at
+                        dolor ac
+                        id.
+                    </div>
+                </div>
+                <div class="eventCardBg"></div>
+            </div>
+            <div class="eventCardWrap">
+                <div class="eventCard">
+                    <div>GUEST<br>LECTURES</div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra malesuada
+                        etiam. Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at
+                        dolor ac
+                        id.
+                    </div>
+                </div>
+                <div class="eventCardBg"></div>
+            </div>
+            <div class="eventCardWrap">
+                <div class="eventCard">
+                    <div>PRO-NITES</div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra malesuada
+                        etiam. Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at
+                        dolor ac
+                        id.
+                    </div>
+                </div>
+                <div class="eventCardBg"></div>
+            </div>
+            <div class="eventCardWrap">
+                <div class="eventCard">
+                    <div>EXHIBITION</div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra malesuada
+                        etiam. Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at
+                        dolor ac
+                        id.
+                    </div>
+                </div>
+                <div class="eventCardBg"></div>
+            </div>
+            <div class="eventCardWrap">
+                <div class="eventCard">
+                    <div>HACKATHON</div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur. Est leo morbi vitae mi et. Arcu elit viverra malesuada
+                        etiam. Penatibus sit blandit sit ultrices. Vulputate ac in egestas scelerisque. Sagittis at
+                        dolor ac
+                        id.
+                    </div>
+                </div>
+                <div class="eventCardBg"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="footer">
+        <img src="../assets/home/navlogo.webp" id="footer-logo">
+        <div>
+            <a href="" class="social-icon"><img src="../assets/home/social-instagram.svg"></a>
+            <a href="" class="social-icon"><img src="../assets/home/social-youtube.svg"></a>
+            <a href="" class="social-icon"><img src="../assets/home/social-twitter.svg"></a>
+        </div>
+    </section>
+
+</body>
+
+</html>

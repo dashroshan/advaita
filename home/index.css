@@ -1,7 +1,7 @@
 /* Hero section start */
 
 #herosection {
-    background: url(./assets/home/herobg.webp);
+    background: url(../assets/home/herobg.webp);
     background-size: cover;
     display: block;
     height: 115vh;

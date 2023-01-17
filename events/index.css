@@ -1,0 +1,177 @@
+body {
+    background: linear-gradient(90deg, #870000 0%, rgba(26, 5, 5, 1) 100%);
+    color: white;
+}
+
+#events {
+    margin-top: 16rem;
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    margin-bottom: 10rem;
+}
+
+#events img {
+    height: 20rem;
+}
+
+#eventsdesc {
+    width: 30rem;
+    text-align: justify;
+}
+
+#eventsdesc>div:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: left;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#eventsdesc>div:nth-of-type(2) {
+    opacity: 0.7;
+}
+
+.redtext {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #FF5B5B7A;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#schCards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5vw;
+    margin-bottom: 3rem;
+}
+
+.scheduleCard img {
+    height: 25rem;
+}
+
+.scheduleCard>div {
+    background: #a00000cf;
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    transform: translateY(-7.35rem);
+    border-radius: 1rem 0 1rem 0;
+}
+
+.scheduleCard.small {
+    scale: 0.8;
+}
+
+#eventsList {
+    margin-bottom: 2rem;
+}
+
+.eventCards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4.5vw;
+    max-width: 83rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.eventCard {
+    background: #d129296f;
+    width: 20rem;
+    height: 14rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.eventCard>div:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.eventCard>div:nth-of-type(2) {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    text-align: justify;
+}
+
+.eventCardWrap {
+    position: relative;
+}
+
+.eventCardBg {
+    display: block;
+    background: #8e0e0edd;
+    width: 20rem;
+    height: 14rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 1rem;
+    right: -1rem;
+    z-index: -1;
+}
+
+@media (max-width:888px) {
+    .eventCards {
+        gap: 3rem;
+    }
+
+    .eventCard {
+        max-width: 20rem;
+        width: calc(85vw - 4rem);
+    }
+
+    .eventCardBg {
+        max-width: 20rem;
+        width: calc(85vw - 4rem);
+    }
+}
+
+@media (max-width:1000px) {
+    #events {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 12rem;
+        margin-bottom: 8rem;
+    }
+
+    #events img {
+        height: auto;
+        width: 90vw;
+        max-width: 30rem;
+    }
+
+    #eventsdesc {
+        width: 90vw;
+        max-width: 30rem;
+    }
+
+    #eventsdesc>div:nth-of-type(1) {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    #schCards {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin-top: 7rem;
+    }
+
+    .scheduleCard.small {
+        scale: unset;
+    }
+
+    .scheduleCard {
+        margin-top: -5rem;
+    }
+}
