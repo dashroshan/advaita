@@ -2,117 +2,428 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:type" content="website" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Advaita</title>
+    <meta itemprop="name" content="Advaita" />
+    <meta property="og:title" content="Advaita" />
+    <meta name="twitter:title" content="Advaita">
+
+    <meta itemprop="image" content="https://url-to-thumbnail" />
+    <meta name="twitter:image" content="https://url-to-thumbnail" />
+    <meta name="twitter:image:src" content="https://url-to-thumbnail">
+    <meta property="og:image" content="https://url-to-thumbnail">
+
+    <link rel="icon" href="https://url-to-icon" />
+    <link rel="apple-touch-icon" href="https://url-to-icon" />
+    <link rel="shortcut icon" href="https://url-to-icon" type="image/x-icon">
+
+    <meta itemprop="description" content="Advaita site description goes here...!" />
+    <meta property="og:description" content="Advaita site description goes here...!" />
+    <meta name="twitter:description" content="Advaita site description goes here...!" />
+    <meta name="description" content="Advaita site description goes here...!">
+
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleMob.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="flipcard.css">
+    <script src="https://kit.fontawesome.com/20aa92e9f6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Stick+No+Bills:wght@800&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Stick+No+Bills:wght@800&display=swap');
+    </style>
 </head>
 <body>
-    <!-- Event Page -->
-<div class="event_Laptop">
-    <div class="container">
-        <div class="event_description">
-            <div class="Heading">
-                Events and Schedule
-            </div>
-                <div class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum optio consequatur ratione dignissimos ad repudiandae, quisquam, fugiat odit tenetur accusantium nam maxime cupiditate tempore qui ea commodi! Nemo sequi explicabo necessitatibus ex accusamus voluptate vel, nisi veritatis ipsa suscipit corrupti perspiciatis nobis, voluptatum natus hic quisquam, placeat saepe. Similique, repellat.
+    <nav id="navbar-wrap">
+        <div id="navbar">
+            <div data-aos="fade-down" id="logo" class="reverse">
+                <div class="mobile-btn" style="font-size:30px;cursor:pointer; font-weight:bold;" onclick="openNav()">
+                    <i class="fa-solid fa-bars fa-lg"></i>
                 </div>
+                <a href="index.html">
+                    <div class="logo"><img src="./assets/home/navlogo.webp">
+                    </div>
+                </a>
+            </div>
+            <div id="links" data-aos="fade-down">
+                <a class="navitem" href="event.html">Events</a>
+                <a class="navitem" href="pronites.html">Pro Nites</a>
+                <a class="navitem" href="sponsor.html">Sponsors</a>
+                <a class="navitem" href="">Contact Us</a>
+                <a id="navbtn" href="#">Register</a>
+            </div>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="event.html">Events</a>
+            <a href="pronites.html">Pro Nites</a>
+            <a href="sponsor.html">Sponsors</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Register</a>
+        </div>
+    </nav>
+    <div class="event">
+      <div class="container">
+        <div class="event_description">
+            <div class="heading">EVENTS AND SCHEDULE</div>
+            <p class="desc desc2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus corrupti assumenda tenetur nisi. Libero officia beatae soluta? Corporis blanditiis neque facere quae quasi placeat architecto excepturi dolorem ratione et praesentium, dolore tempore amet quaerat asperiores numquam dicta deserunt accusantium repudiandae eveniet nulla ut provident pariatur. Velit consequatur quasi autem dolorum.</p>
         </div>
         <div class="event_image">
-            <img src="./Images/Group 42.png" alt="image" id="img1">
-            <!-- <img src="./Images/Rectangle 17.jpg" alt="image" id="img2"> -->
+            <img src="./Images/33533013_8058231 1.svg" alt="image" id="img1">   
         </div>
     </div>
-    <div class="Schedule">
-        <div class="schedule_Heading">SCHEDULE</div>
-        <div class="Schedule_Slider">
-            
-                <div class="card">
-                    <img src="./Images/Rectangle 7.png">
-                    <div class="card_description">
-                        Day 1
-                    </div>
-                </div >
-                <div class="card">
-                    <img src="./Images/Rectangle7(1).png">
-                </div>
-                <div class="card">
-                    <img src="./Images/Rectangle7(2).png">
-                </div>
+    <h1 class="heading" style="text-align:center;color:rgba(255, 91, 91, 0.48)">SCHEDULE</h1>
+    <div class="schedule">
+        <img src="./Images/Rectangle 7.png" id="img2" alt="">
+        <!-- <div class="desc schedule_desc1">DAY 1</div> -->
+        <img src="./Images/Rectangle7(1).png" id="img3" alt="">
+        <img src="./Images/Rectangle7(2).png" id="img4">
+    </div>
+    <h1 class="heading" style="text-align:center;color:rgba(255, 91, 91, 0.48)">EVENTS</h1>
+    <a class="width-100" href="technical_events.html">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <span class="heading2">Technical Events</span>
+                <p class="desc">Get ready to Test you technical skill in the Odisha's biggest Event SPRING FEST.<br>Annual Fest of IIIT Bhubaneshwar </p>
             </div>
-            
+              <div class="flip-card-back">
+                <ul>
+                    <li>SWIG n CODE: An interesting coding competition format with two rounds </li>
+                    <li>SWITCH CODING: Coding contest with single coding round for teams of 2. ICPC format of contes </li>
+                    <li>TECH TALK </li>
+                    <li>CAPTURE THE FLAG: Cyber Security event to Participants will have to compromise servers, PCs,firewalls and some other networking device </li>
+                    <li>HACKATHON - Name - Hackfest Advaita 16th jan - Devfolio hackfest registration public link 25th - 27th jan  </li>
+                    <li>TECH NOVA - A day long exhibition of most interesting and useful projects from students and community.</li>
+                    <li>Cyber hunt </li>
+                    <li>Workshop - 2 hours long hands on workshop on new technologies for all by tech experts </li>
+                    <li>FPV Racing </li>
+                    <li>ROBO RACE</li>
+                    <li>LINE FOLLOWER: The line follower robot.Robot finishing in the least time wins.</li>
+                    <li>DIRT RUSH:Dirt Rush is a form of RC car racing that takes place on dirt tracks </li>
+                    <li>MAZE SOLVER: A maze solver RC competition.designed to navigate through complex mazes autonomously </li>
+                    <li>Robo Wars</li>
+                </ul>
+              </div>
+            </div>
+          </div> 
+          <div class="date-container">
+            <div class="arrow-left"></div>
+
+            <div class="date-card">
+                <div class="day">21</div>
+                <div>
+                   <div class="month">September</div>
+                  <div class="year">2017</div>
+                </div>
+              </div>
+        </div>
+    </a>
+    
+     
+      <div class="width-100">
+        <div class="date-container date-left">
+
+            <div class="date-card">
+                <div class="day">21</div>
+                <div>
+                   <div class="month">September</div>
+                  <div class="year">2017</div>
+                </div>
+              </div>
+              <div class="arrow-right"></div>
+
+        </div>
+        
+        <a href="cult_event.html" class="flip-card align_right">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <span class="heading2">CULTURAL EVENTS</span>
+                <p class="desc">Get ready be lost in the rythm of beats and rock the stage with your moves</p>
+            </div>
+              <div class="flip-card-back">
+                <ul>
+                    <li>
+                        PRONITES: Get high on tunes with pioneer musicians.
+                        .   
+                    </li>
+                    <li>
+                        CYPHER : Let the raw moves clash, from the streets, to the stage.
+                    </li>
+                    <li>
+                        Acoustica : A souvenir of melodies
+                    </li>
+                    <li>
+                        Lamode : Let the fashionista in you preach !
+                    </li>
+                    <li>
+                        Footloser : Breach the rules and unveil your moves.
+                    </li>
+                    <li>
+                        Footloser : Breach the rules and unveil your moves.
+                    </li>
+                    <li>
+                        Rockathon : War of bands.
+                    </li>
+                    <li>
+                      MIC DROP : Jam hard to the heavy bars.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a> 
+      </div>
+      <div class="width-100">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="heading2">FLIMS n THEATRE</span>
+            <p class="desc">Get ready to showcase your 'Acting ka keeda' in front of India.</p>
+        </div>
+          <div class="flip-card-back">
+            <ul>
+                <li>
+                    PRADARSHAN(nukkad)- Change! Reform! Badlaav! Through nukkad-natak. 
+                </li>
+                <li>
+                    RANGBHUMI(theatre)- if you have the power to reform the world, showcase here.
+                </li>
+                <li>
+                    MAI KALAKAR (solo or duo)- bring your inner kalakar out.
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+      <div class="date-container ">
+        <div class="arrow-left"></div>
+        <div class="date-card">
+            <div class="day">21</div>
+            <div>
+               <div class="month">September</div>
+              <div class="year">2017</div>
+            </div>
+          </div>
     </div>
-    <div class="schedule_Heading" style="margin-top:10vh" >EVENTS</div>
-    <div class="event_slider " data-carousel>
-        <button class="btn-previous control-button" data-control-button="prev">&#8656</button>
-        <button class="btn-next control-button" data-control-button="next">&#8658</button>
-        <ul data-slides>
-            <li class="slide" data-active>
-                <div class="event_card">
-                    <span style="margin-bottom:2vh">TECHNICAL EVENTS</span>
-                    <span class="desc">
-                       rum corporis sint id accusantium, doloribus iusto nesciunt recusandae ducimus dolor! Fugiat, labore ad odit quasi neque unde quis eligendi. Atque natus debitis repellendus. Quo nisi nostrum quam beatae, enim ad?
-                    </span>
-                </div>
-            </li>
-            <li class="slide">
-                <div class="event_card">
-                    <span style="margin-bottom:2vh">CULTURAL EVENTS</span>
-                    <span class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae ex enim expedita inventore amet error? Magnam ut aliquam dolorum corporis sint id accusantium, doloribus iusto nesciunt recusandae ducimus dolor! Fugiat, labore ad odit quasi neque unde quis eligendi. Atque natus debitis repellendus. Quo nisi nostrum quam beatae, enim ad?
-                    </span>
-                </div>
-            </li>
-            <li class="slide">
-                <div class="event_card">
-                    <span style="margin-bottom:2vh">GUEST LECTURES</span>
-                    <span class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae ex enim expedita inventore amet error? Magnam ut aliquam dolorum corporis sint id accusantium, doloribus iusto nesciunt recusandae ducimus dolor! Fugiat, labore ad odit quasi neque unde quis eligendi. Atque natus debitis repellendus. Quo nisi nostrum quam beatae, enim ad?
-                    </span>
-                </div>
-            </li>
-            <li class="slide">
-                <div class="event_card">
-                    <span style="margin-bottom:2vh">PRO-NITES</span>
-                    <span class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae ex enim expedita inventore amet error? Magnam ut aliquam dolorum corporis sint id accusantium, doloribus iusto nesciunt recusandae ducimus dolor! Fugiat, labore ad odit quasi neque unde quis eligendi. Atque natus debitis repellendus. Quo nisi nostrum quam beatae, enim ad?
-                    </span>
-                </div>
-            </li>
-            <li class="slide">
-                <div class="event_card">
-                    <span style="margin-bottom:2vh">EXIBHITION</span>
-                    <span class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae ex enim expedita inventore amet error? Magnam ut aliquam dolorum corporis sint id accusantium, doloribus iusto nesciunt recusandae ducimus dolor! Fugiat, labore ad odit quasi neque unde quis eligendi. Atque natus debitis repellendus. Quo nisi nostrum quam beatae, enim ad?
-                    </span>
-                </div>
-            </li>
-            <li class="slide">
-                <div class="event_card">
-                    <span style="margin-bottom:2vh">HACKTHON</span>
-                    <span class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae ex enim expedita inventore amet error? Magnam ut aliquam dolorum corporis sint id accusantium, doloribus iusto nesciunt recusandae ducimus dolor! Fugiat, labore ad odit quasi neque unde quis eligendi. Atque natus debitis repellendus. Quo nisi nostrum quam beatae, enim ad?
-                   </span>
-                </div>
-            </li>
-        </ul>
+
     </div>
-</div>
-<!-- for mobile -->
-<div class="event_mobile">
-<div class="container_mob">
-    <h1 class="head">
-        EVENTS AND SCHEDULE
-    </h1>
-    <div class="description_mob">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum esse possimus voluptate? Id non ipsam aspernatur adipisci ex corporis mollitia modi temporibus, est quas cupiditate possimus placeat in veniam fugiat corrupti! Delectus dolor commodi nobis voluptate vero quod animi, porro est ut consequuntur doloribus voluptates iste placeat itaque omnis eaque.</div>
-    <div class="image_mob">
-        <img src="./Images/Rectangle 16.jpg" alt="image" id="img1mob">
-            <img src="./Images/Rectangle 17.jpg" alt="image" id="img2mob">
+    
+      <div class="width-100">
+        <div class="date-container date-left">
+
+            <div class="date-card">
+                <div class="day">21</div>
+                <div>
+                   <div class="month">September</div>
+                  <div class="year">2017</div>
+                </div>
+              </div>
+              <div class="arrow-right"></div>
+
+        </div>
+
+        <div class="flip-card align_right">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <span class="heading2">PARACOSM EVENTS</span>
+                <p class="desc">If you are a artist and understand the art of beauty then this is the place to showcase your hidden artist.</p>
+            </div>
+              <div class="flip-card-back">
+                <ul>
+                    <li>
+                         SCAVENGER HUNT :- “Search, discover and make the miracle happen”.
+                    </li>
+                    <li>
+                        DRAW-it-RIGHT :- “The chinese whisper of ink strokes”.
+                   </li>
+                   <li>
+                    ART-CCURACY :- “Create the magic with your memory and precision”.
+               </li>
+               <li>
+                PICASSO :- “The relay of paint brushes and diverse minds”.
+
+           </li>
+                </ul>
+              </div>
+            </div>
+          </div> 
+      </div>
+      
+      <div class="width-100">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <span class="heading2">MASTER CHEF</span>
+                <p class="desc">Get ready to capture the event with your taste and become a MASTER CHEF of IIIT Bhubaneshwar.<br>WAIT WAIT WAIT!! <br>If you are a foodie empty your stomach and get ready to beat your hunger </p>
+            </div>
+              <div class="flip-card-back">
+               <ul>
+                <li>
+                    MAGGIE CHEF - Cook maggie with a decilious punch.
+                </li> <li>
+                    SHOLE PARANTHE - Parantha eating competition with hot chilly sauce .
+                </li>
+                <li>
+                    GOLGAPPA KING - Golgappa eating competition.
+                </li>
+                <li>
+                    STRINGED DELICACY - Eat the hanging items to win prizes.
+                </li>
+               </ul>
+              </div>
+            </div>
+          </div> 
+          <div class="date-container ">
+            <div class="arrow-left"></div>
+            <div class="date-card">
+                <div class="day">21</div>
+                <div>
+                   <div class="month">September</div>
+                  <div class="year">2017</div>
+                </div>
+              </div>
+        </div>
+
+      </div>
+      <div class="width-100">
+        <div class="date-container date-left">
+            <div class="date-card">
+                <div class="day">21</div>
+                <div>
+                   <div class="month">September</div>
+                  <div class="year">2017</div>
+                </div>
+              </div>
+              <div class="arrow-right"></div>
+
+        </div>
+      <div class="flip-card align_right" >
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="heading2">PHOTOGEEKS</span>
+            <p class="desc">Want to take your photography skill to the next level then this event is for you. This event is a perfect blend of learning and Competiting.
+                </p>
+        </div>
+          <div class="flip-card-back">
+            <ul>
+                <li>
+                    PHOTOGRAPHY WORKSHOPS: An insight into the world of Photography by renowned experts in the field, this workshop will aid you in being a better shutterbug!
+
+                </li>
+                <li>
+                    Photomanipulation Workshop: Do you want to step into the world of digital art or maybe start designing some beautiful posters or perhaps manipulate your friend's face with that of a monkey? This workshop will give you hands-on experience with ,professional-level graphics editing software for the same.
+                </li>
+                <li>
+                    IMAGEN: Imagen is a series of photography and videography competitions specially curated for encouraging enthusiasts and fueling the common passion for cameras and frames.
+
+                </li>
+                <li>
+                    A STILL IN TIME: Come and be a part of this lovely moment as we invite you to be part of this Photo exhibition where we will be putting forward some of the best works and also giving an insight into the world of Photography. A photo booth to freeze your moments at #Advaita2023.
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div> 
     </div>
-</div>
-</div>
+    <div class="width-100">
+        <div class="flip-card" >
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <span class="heading2">VEDANTA SAMITI</span>
+                <p class="desc">Get ready to capture the event with your taste and become a MASTER CHEF of IIIT Bhubaneshwar.<br>WAIT WAIT WAIT!! <br>If you are a foodie empty your stomach and get ready to beat your hunger </p>
+            </div>
+              <div class="flip-card-back">
+               <ul>
+                <li>
+                    Marathon (Run for Blood): In wake of helping needy patients (survive surgeries, cancer treatment etc.)we are organizing a marathon to create awareness on blood donation.Following this campaign, a blood donation camp will be organised inside the campus.
+
+                </li> 
+                <li>
+                    UMANG: Umang is a pep-talk organised for students where a renowned and accomplished speaker enlightens them.
+
+                </li>
+                <li>
+                    SPIC MACAY:
+                    SPIC MACAY is a voluntary youth movement that promotes intangible elements of Indian cultural heritage. Professional artists will be gracing the inaugural ceremony with their precious presentation
+
+                </li>
+               
+               </ul>
+              </div>
+            </div>
+          </div> 
+          <div class="date-container ">
+            <div class="arrow-left"></div>
+            <div class="date-card">
+                <div class="day">21</div>
+                <div>
+                   <div class="month">September</div>
+                  <div class="year">2017</div>
+                </div>
+              </div>
+        </div>
+
+      </div>
+      <div class="width-100">
+        <div class="date-container date-left">
+            <div class="date-card">
+                <div class="day">21</div>
+                <div>
+                   <div class="month">September</div>
+                  <div class="year">2017</div>
+                </div>
+              </div>
+              <div class="arrow-right"></div>
+
+        </div>
+      <div class="flip-card align_right">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="heading2">SPORTS</span>
+            <p class="desc">When you say competitive, we say esports. And by the way, it’s not just for gamers.
+                </p>
+        </div>
+          <div class="flip-card-back">
+            <ul>
+                <li>
+                    Dive deep into the arena of competetiveness with 
+                </li>
+                <li>
+                    Valorant PC
+                </li>
+                <li>
+                    COD mobile.
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+    </div>
+    </div>
+   
+    <div class="Space" style="height:20vh"></div>
+<div class="vertical_ruler"></div>
+<section id="footer">
+    <img src="./assets/home/navlogo.webp" id="footer-logo">
+    <div>
+        <a href="" class="social-icon"><img src="./assets/home/social-instagram.svg"></a>
+        <a href="" class="social-icon"><img src="./assets/home/social-youtube.svg"></a>
+        <a href="" class="social-icon"><img src="./assets/home/social-twitter.svg"></a>
+    </div>
+</section>
 </body>
 </html>

@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(90deg, #870000 0%, rgba(26, 5, 5, 1) 100%);
+      overflow-x:hidden ;
+
+}
+.event{
+    overflow-x:hidden;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80vh;
+}
+.event_description{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    width:30rem;
+    height:20rem;
+}
+.desc{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+font-weight: 400;
+font-size: 1.1rem;
+line-height: 1.8rem;
+
+/* white */
+
+color: #FFFFFF;
+
+opacity: 0.7;
+}
+.heading{
+    font-family: 'Poppins', sans-serif;
+        font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 6rem;
+    
+    /* white */
+    
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.heading2{
+    font-family: 'Poppins', sans-serif;
+        font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3rem;
+    
+    /* white */
+    padding:0 0 3rem 0;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.event_image{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding:6rem 0 0 6rem;
+}
+.schedule{
+    width:70vw;
+    height:70vh;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    margin: auto;
+}
+.schedule_desc1{
+    position: absolute;
+    width:20vw;
+    background: #A00000;
+    opacity: 0.7;
+    border-radius: 20px 0px;
+    height: 10vh;
+    top:50vh;
+}
+
+.width-100{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100vw;
+}
+.vertical_ruler{
+    position:absolute;
+    left:50vw;
+    top:177vh;
+    width:1vh;
+    height:410vh;
+    background-color:#FFFFFF;
+
+}
+.date-card{
+    position: relative;
+    z-index:2;
+    background-color: #FFFFFF;
+    width:18vw;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    border: 1px solid black; 
+    display: none;
+  }
+  
+  .date-card .day{
+    font-size:2rem;
+    margin:0px 10px;
+    color:#A00000;
+  }
+  
+  .date-card .month{
+    font-weight:bold;
+    font-size:1rem;
+    color:#A00000;
+  }
+  .date-container{
+    display:flex;
+    align-items:center;
+    height:45vh;
+    width:50vw;
+  }
+  .date-left{
+    justify-content:flex-end;
+  }
+
+  .arrow-left{
+    position:relative;
+    z-index: 1;
+    left:3%;
+    height:5vh;
+    width:5vh;
+    background-color:#FFFFFF;
+    transform: rotate(45deg);
+    display:none;
+  }
+  .arrow-right{
+    position:relative;
+    z-index: 1;
+    right:3%;
+    height:5vh;
+    width:5vh;
+    background-color:#FFFFFF;
+    transform: rotate(45deg);
+    display:none;
+  }
+  li{
+    line-height:2rem;
+    text-align:left;
+  }
+  @media (max-width:945px) {
+    .heading{
+      font-size: 3rem;
+      line-height:4rem;
+      margin: 0 2rem 0 2rem;
+    }
+    .desc{
+        font-size:1rem;
+        line-height:1.1rem;
+        margin: 0 2rem 0 2rem;
+    }
+    #img1{
+        object-fit: cover;
+        width:45vw;
+        margin:0 0 5rem 0;
+    }
+   .schedule{
+    height:200vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   #img2{
+    object-fit: cover;
+    margin:1rem;
+    width:40vw;
+   }
+   #img3{
+    object-fit: cover;
+    margin:1rem;
+    width:40vw;
+   }
+   #img4{
+    object-fit: cover;
+    margin:1rem;
+    width:40vw;
+   }
+   .vertical_ruler{
+    top:300vh;
+    height:415vh;
+   }
+   .arrow-left{
+    left:6%;
+   }
+   .arrow-right{
+    right:6%;
+   }
+  }
+  @media (max-width:720px) {
+        .heading2{
+            font-size:2rem;
+        }
+        .heading{
+            font-size:2rem;
+            line-height: 2rem;
+            margin: 1rem;
+        }
+        #img1{
+            margin-right: 1rem;
+        }
+        .schedule{
+            height:130vh;
+        }
+        .desc{
+            font-size:1rem;
+            width:100%;
+        }
+        .vertical_ruler{
+            top:230vh;
+            height:415vh;
+        }
+        .desc2{
+            margin-left:4rem;
+        }
+        
+        .date-card .day{
+            font-size:2rem;
+
+        }
+        .date-card .month{
+            font-size:0.8rem;
+        }
+        .arrow-left{
+            left:7%;
+           }
+           .arrow-right{
+            right:7%;
+           }
+       
+  }
+  @media (max-width:600px){
+    .desc{
+        font-size:0.8rem;
+    }
+    .date-card .day{
+        font-size:1.8rem;
+
+    }
+    .date-card .month{
+        font-size:0.6rem;
+    }
+    .arrow-left{
+        left:10%;
+       }
+       .arrow-right{
+        right:10%;
+       }
+
+  }
+  @media (max-width:550px) {
+        .vertical_ruler{
+            width:0.5vh;
+            display:none;
+        }
+      .heading2{
+        font-size:1.8rem;
+      }
+      .desc{
+        font-size:0.8rem;
+      }
+      
+  }
+  @media (max-width:480px){
+    .container{
+        flex-direction: column;
+    }
+    .desc{
+        font-size:1rem;
+        width: 70%;
+    }
+    .event_image{
+        padding: 0;
+    }
+    .schedule{
+        height:90vh ;
+    }
+    #img4 , #img2 , #img3{
+        object-fit:cover;
+        width: 60%;
+    }
+    .vertical_ruler{
+        top:186vh;
+        height:403vh;
+    }
+    .date-card .day{
+        font-size:1.3rem;
+
+    }
+    .date-card .month{
+        font-size:0.6rem;
+    }
+    .arrow-left{
+        left:10%;
+        height:3vh;
+        width:3vh;
+       }
+       .arrow-right{
+        right:10%;
+        height:3vh;
+        width:3vh;
+       }
+       .heading2{
+        font-size:1.5rem;
+       }
+  }
+  @media (max-width:400px){
+    .heading{
+        width:80vw;
+        margin-top:12rem ;
+        overflow:hidden;
+    }
+    .event_description{
+        height:100vh;
+        justify-content:space-around;
+    }
+    #img1{
+        width:80vw;
+    }
+    .schedule{
+        height:120vh;
+    }
+
+    .vertical_ruler, .date-card, .arrow-left, .arrow-right{
+       display:none;
+    }
+    .width-100{
+        justify-content:space-between;
+    }
+    #
+    
+  }
+  @media (min-width: 350) {
+    .desc2{
+        width:50vw;
+    }
+    .container{
+        justify-content:space-around;
+    }
+  }
