@@ -97,6 +97,7 @@ a {
     height: 14rem;
     padding: 2rem;
     border-radius: 1rem;
+    transition: .3s ease-in-out;
 }
 
 .eventCard>div:nth-of-type(1) {
@@ -128,6 +129,10 @@ a {
     top: 1rem;
     right: -1rem;
     z-index: -1;
+}
+
+.eventCardWrap:hover .eventCard {
+    transform: translate(0.5rem, 0.5rem);
 }
 
 @media (max-width:888px) {

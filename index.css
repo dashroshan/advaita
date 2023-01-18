@@ -104,7 +104,7 @@ body {
 
 .navitem:after {
     content: " ";
-    background: #FF52527A;
+    background: #ef32329f;
     height: 0.2rem;
     border-radius: 0.1rem;
     margin-top: 0.3rem;
@@ -121,7 +121,7 @@ body {
 }
 
 #navbtn {
-    background: #0A6392;
+    background: #e43131;
     padding: 0.7rem 2rem;
     border-radius: 2rem;
     transform: translateY(-0.2rem);
@@ -130,7 +130,8 @@ body {
 }
 
 #navbtn:hover {
-    background: #0b94de;
+    background: #b11414;
+    transform: scale(0.98) translateY(-0.2rem);
 }
 
 .sidenav {
@@ -243,6 +244,14 @@ body {
 
 .social-icon:last-of-type {
     margin-right: 0;
+}
+
+.social-icon img {
+    transition: .3s ease-in-out;
+}
+
+.social-icon:hover img {
+    transform: scale(0.9);
 }
 
 /* Footer end */
