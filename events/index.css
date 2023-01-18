@@ -3,6 +3,11 @@ body {
     background: linear-gradient(10deg, #1A283A 0%, #210303 100%);
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 #events {
     background: linear-gradient(150deg, #1A283A 0%, #210303 100%);
     padding-top: 16rem;
