@@ -157,11 +157,11 @@ body {
 }
 
 .sidenav a:hover {
-    color: #0b94de;
+    color: #e43131;
 }
 
 .sidenav a:last-of-type {
-    background: #0b94de;
+    background: #b11414;
     color: white;
     padding-top: 1.2rem;
     transition: background 0.3s;
@@ -180,7 +180,7 @@ body {
 }
 
 .mobile-btn {
-    color: #0b94de;
+    color: #e43131;
     transform: scale(0.9) translateY(-1.1rem);
 }
 
