@@ -138,11 +138,13 @@ a {
     .eventCard {
         max-width: 20rem;
         width: calc(85vw - 4rem);
+        transform: translateX(-0.5rem);
     }
 
     .eventCardBg {
         max-width: 20rem;
         width: calc(85vw - 4rem);
+        transform: translateX(-0.5rem);
     }
 }
 
