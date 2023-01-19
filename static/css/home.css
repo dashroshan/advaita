@@ -1,7 +1,7 @@
 /* Hero section start */
 
 #herosection {
-    background: url(../assets/home/herobackground.webp) fixed;
+    background: url(../images/home/herobackground.webp) fixed;
     background-position: center;
     background-size: cover;
     display: block;
